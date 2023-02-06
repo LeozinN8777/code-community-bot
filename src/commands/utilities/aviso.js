@@ -68,7 +68,7 @@ module.exports = {
       })
       .setTimestamp(new Date());
 
-      channel.send({ embeds: [embed] })
+      channel.send({ embeds: [embed], content: '@here' })
       .then( () => {
         interaction.reply({ content:`✅ Aviso enviada com sucesso! \n${channel}`, ephemeral: true})
       })
